@@ -2,7 +2,7 @@
   (:import [com.microsoft.bingads AuthorizationData PasswordAuthentication ServiceClient OAuthDesktopMobileAuthCodeGrant NewOAuthTokensReceivedListener OAuthWebAuthCodeGrant]
            [com.microsoft.bingads PasswordAuthentication]
            [com.microsoft.bingads.internal OAuthWithAuthorizationCode LiveComOAuthService]
-           [com.microsoft.bingads.reporting Date IReportingService KeywordPerformanceReportRequest KeywordPerformanceReportColumn ReportFormat ReportAggregation AccountThroughAdGroupReportScope AccountReportScope ReportTime ReportTimePeriod ArrayOfKeywordPerformanceReportColumn SubmitGenerateReportRequest ArrayOflong PollGenerateReportRequest ReportRequestStatusType AccountPerformanceReportColumn AccountPerformanceReportRequest AccountReportScope ArrayOfAccountPerformanceReportColumn AdApiFaultDetail_Exception]
+           [com.microsoft.bingads.v11.reporting Date IReportingService KeywordPerformanceReportRequest KeywordPerformanceReportColumn ReportFormat ReportAggregation AccountThroughAdGroupReportScope AccountReportScope ReportTime ReportTimePeriod ArrayOfKeywordPerformanceReportColumn SubmitGenerateReportRequest ArrayOflong PollGenerateReportRequest ReportRequestStatusType AccountPerformanceReportColumn AccountPerformanceReportRequest AccountReportScope ArrayOfAccountPerformanceReportColumn AdApiFaultDetail_Exception]
            [java.util.zip ZipInputStream]
            [java.io StringWriter FileNotFoundException]
            [java.net URL])
