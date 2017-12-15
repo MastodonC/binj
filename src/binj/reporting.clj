@@ -11,6 +11,7 @@
             [clojure.java.io :as io]
             [clojure.data.csv :as csv]
             [clojure.edn :as edn]
+            [clj-time.core :as t]
             [clj-time.format :as tf]
             [clj-time.coerce :as tc]))
 
@@ -275,7 +276,7 @@
     {:report-url     (.getReportDownloadUrl status)
      :status         (report-status (.getStatus status))}))
 
-(def gregorian-date-format (tf/formatter "MM/dd/yyyy"))
+(def gregorian-date-format (tf/formatter (t/default-time-zone) "yyyy-MM-dd" "MM/dd/yyyy"))
 
 (defn parse-date [s] (tc/to-local-date (tf/parse gregorian-date-format s)))
 (defn parse-long [s] (Long/valueOf s))
